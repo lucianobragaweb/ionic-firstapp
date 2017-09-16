@@ -21,8 +21,8 @@
       <ion-avatar item-start>
         <img src="assets/img/profile.jpg">
       </ion-avatar>
-      <h2 class="title">{{ userName }}</h2>
-      <p>07 de Setembro, 2017</p>
+      <h2 class="title">{{ objFeed.name }}</h2>
+      <p>{{ objFeed.date }}</p>
     </ion-item>
 
     <img src="assets/img/profile.jpg">
@@ -35,13 +35,13 @@
       <ion-col>
         <button ion-button icon-left clear small>
         <ion-icon name="thumbs-up"></ion-icon>
-        <div>12 votos</div>
+        <div>{{ objFeed.likes }} votos</div>
       </button>
       </ion-col>
       <ion-col>
         <button ion-button icon-left clear small>
         <ion-icon name="text"></ion-icon>
-        <div>4 Commentários</div>
+        <div>{{ objFeed.comments }} Commentários</div>
       </button>
       </ion-col>
       <ion-col center text-center>
